@@ -2,106 +2,102 @@ import { Link } from "react-router-dom";
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-white py-20">
+    <section id="services" className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Section Title */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl lg:text-4xl font-bold text-blue-800">
-            Our Core Services
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-blue-900">
+            Comprehensive Technology Solutions
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            We provide complete installation, configuration and maintenance
-            solutions for audio-visual and surveillance systems.
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+            We design, implement and maintain integrated audio-visual,
+            surveillance and communication systems tailored for government,
+            corporate and institutional environments.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-          {/* Card 1 */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 className="text-xl font-semibold text-blue-700 mb-3">
-                    Audio Systems
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                    Professional PA systems, conference audio setups, amplifiers,
-                    mixers and auditorium sound installations.
-                    </p>
-                </div>
+          {/* Service 1 */}
+          <ServiceCard
+            title="Professional Sound Systems"
+            description="Advanced public address systems, auditorium acoustics, conference audio setups and high-performance amplification solutions designed for clarity and reliability."
+          />
 
-                <Link
-                    to="/services"
-                    className="mt-6 text-blue-700 font-semibold hover:underline"
-                >
-                    Learn More →
-                </Link>
-            </div>
+          {/* Service 2 */}
+          <ServiceCard
+            title="Video Conferencing & Collaboration"
+            description="End-to-end conferencing solutions including cameras, control systems and integrated communication platforms for seamless virtual collaboration."
+          />
 
+          {/* Service 3 */}
+          <ServiceCard
+            title="LED Displays & Video Walls"
+            description="High-definition LED screens and large-format video wall installations for control rooms, auditoriums, events and information display systems."
+          />
 
-          {/* Card 2 */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 className="text-xl font-semibold text-blue-700 mb-3">
-                    CCTV Surveillance
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                    IP and analog CCTV systems, remote monitoring, night vision
-                    cameras and complete security solutions.
-                    </p>
-                </div>
+          {/* Service 4 */}
+          <ServiceCard
+            title="CCTV & Security Surveillance"
+            description="Comprehensive surveillance infrastructure including IP cameras, recording systems, monitoring setups and network-based security integration."
+          />
 
-                <Link
-                    to="/services"
-                    className="mt-6 text-blue-700 font-semibold hover:underline"
-                >
-                    Learn More →
-                </Link>
-            </div>
+          {/* Service 5 */}
+          <ServiceCard
+            title="Projection & Presentation Systems"
+            description="Professional-grade projection systems for classrooms, boardrooms and large venues with precise calibration and installation."
+          />
 
-          {/* Card 3 */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 className="text-xl font-semibold text-blue-700 mb-3">
-                    LCD Projectors
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                    Classroom, conference and large venue projection systems with
-                    professional installation and calibration.
-                    </p>
-                </div>
+          {/* Service 6 */}
+          <ServiceCard
+            title="Stage Lighting & Stage Craft"
+            description="Dynamic lighting solutions and stage infrastructure for auditoriums, performances and institutional events with modern control systems."
+          />
 
-                <Link
-                    to="/services"
-                    className="mt-6 text-blue-700 font-semibold hover:underline"
-                >
-                    Learn More →
-                </Link>
-            </div>
+          {/* Service 7 */}
+          <ServiceCard
+            title="LAN Networking Solutions"
+            description="Structured cabling, networking infrastructure and connectivity solutions to support audio-visual and surveillance systems."
+          />
 
-          {/* Card 4 */}
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 className="text-xl font-semibold text-blue-700 mb-3">
-                    Lighting Systems
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                    Stage lighting, architectural lighting and energy-efficient
-                    LED installations for commercial and industrial facilities.
-                    </p>
-                </div>
-
-                <Link
-                    to="/services"
-                    className="mt-6 text-blue-700 font-semibold hover:underline"
-                >
-                    Learn More →
-                </Link>
-            </div>
+          {/* Service 8 */}
+          <ServiceCard
+            title="Technical Consultancy & Design"
+            description="Site-specific system planning, acoustic consultation and technical guidance to ensure optimal system performance and long-term scalability."
+          />
 
         </div>
+
       </div>
     </section>
+  );
+}
+
+/* Reusable Service Card Component */
+
+function ServiceCard({ title, description }) {
+  return (
+    <div className="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between">
+      
+      <div>
+        <h3 className="text-xl font-semibold text-blue-800 mb-4">
+          {title}
+        </h3>
+
+        <p className="text-gray-600 text-sm leading-relaxed">
+          {description}
+        </p>
+      </div>
+
+      <Link
+        to="/services"
+        className="mt-8 text-blue-800 font-semibold hover:underline"
+      >
+        Discover More →
+      </Link>
+
+    </div>
   );
 }

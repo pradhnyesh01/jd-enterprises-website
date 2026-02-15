@@ -13,14 +13,15 @@ export default function AboutSnapshot() {
           </h2>
 
           <p className="text-gray-700 mb-6">
-            J.D. Enterprises is a government registered contractor providing
-            integrated audio systems, CCTV surveillance, LCD projectors and
-            lighting solutions for institutions, offices and industrial facilities.
+            J.D. Enterprises is an ISO 9001:2015 certified ‘A’ Class Government Electrical Contractor 
+            delivering integrated audio-visual, surveillance and lighting solutions for government departments, 
+            corporate offices, educational institutions and industrial facilities.
           </p>
 
           <p className="text-gray-700 mb-6">
-            Established in 2017, we have built a reputation for reliability,
-            compliance and professional execution.
+            Established in 2010, we have built a strong reputation across Maharashtra 
+            through consistent technological advancement, 
+            regulatory compliance and professionally executed turnkey projects.
           </p>
 
           <Link

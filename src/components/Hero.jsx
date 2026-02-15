@@ -8,11 +8,11 @@ const images = [hero1, hero2, hero3];
 export default function Hero({ onOpenModal }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto slide every 3 seconds
+  // Auto slide every 4 seconds (slightly smoother)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -30,75 +30,76 @@ export default function Hero({ onOpenModal }) {
         >
           <img
             src={image}
-            alt="Hero Slide"
+            alt="J.D. Enterprises Solutions"
             className="w-full h-full object-cover"
           />
         </div>
       ))}
 
-      {/* Dark Blue Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/85 via-blue-900/80 to-blue-800/75"></div>
+      {/* Professional Dark Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-blue-900/85 to-blue-800/80"></div>
 
       {/* Content Wrapper */}
       <div className="relative w-full px-10 lg:px-24 xl:px-36 py-20">
 
         <div className="max-w-6xl space-y-10 text-white">
 
-          {/* Badge */}
+          {/* Certification Badge */}
           <div className="inline-block bg-white/20 text-sm px-6 py-2 rounded-full font-medium backdrop-blur-sm">
-            Government Registered Contractor • Since 2017
+            ISO 9001:2015 Certified • ‘A’ Class Government Electrical Contractor • Since 2010
           </div>
 
-          {/* Heading */}
+          {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
-            Integrated Audio Systems,
+            Integrated Audio Visual,
             <br />
-            CCTV Surveillance &
+            Surveillance & Lighting
             <br />
-            Professional Projection Solutions
+            Solutions for Government & Corporate Spaces
           </h1>
 
           {/* Description */}
           <p className="text-lg text-gray-200 max-w-3xl">
-            Delivering reliable and scalable audio-visual, surveillance and
-            lighting solutions for institutions, corporate offices and
-            industrial facilities.
+            J.D. Enterprises delivers professional Sound Systems, LED Displays,
+            Video Conferencing, Stage Lighting, CCTV Surveillance and Networking
+            solutions with end-to-end design, consultancy, supply and installation
+            across Maharashtra.
           </p>
 
-          {/* Stats */}
+          {/* Key Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 pt-8 text-sm">
             <div>
-              <div className="text-3xl font-bold">8+</div>
+              <div className="text-3xl font-bold">16+</div>
               <div className="text-gray-200">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">150+</div>
-              <div className="text-gray-200">Installations</div>
+              <div className="text-3xl font-bold">500+</div>
+              <div className="text-gray-200">Projects Executed</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">GST</div>
-              <div className="text-gray-200">Registered</div>
+              <div className="text-3xl font-bold">Govt.</div>
+              <div className="text-gray-200">Approved Contractor</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">1.5–5 Cr</div>
-              <div className="text-gray-200">Annual Turnover</div>
+              <div className="text-3xl font-bold">Maharashtra</div>
+              <div className="text-gray-200">Statewide Operations</div>
             </div>
           </div>
 
-          {/* Buttons */}
+          {/* CTA Buttons */}
           <div className="flex gap-5 flex-wrap pt-6">
             <button
               onClick={onOpenModal}
               className="bg-white text-blue-900 px-8 py-3 font-semibold rounded-md hover:scale-105 transition"
             >
-              Get Quote
+              Request a Quote
             </button>
 
             <a
               href="#services"
               className="border border-white px-8 py-3 font-semibold rounded-md hover:bg-white hover:text-blue-900 transition"
             >
-              Our Services
+              Explore Our Services
             </a>
           </div>
 
