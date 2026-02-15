@@ -5,38 +5,43 @@ export default function About() {
     <div>
 
       {/* Banner */}
-      <section className="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-20">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold">About J.D. Enterprises</h1>
-          <p className="mt-4 text-gray-100 max-w-2xl mx-auto">
-            Government Registered Contractor providing integrated audio-visual,
-            surveillance and lighting solutions.
+          <h1 className="text-4xl font-bold">
+            About J.D. Enterprises
+          </h1>
+          <p className="mt-4 text-gray-200 max-w-3xl mx-auto">
+            ISO 9001:2015 Certified • ‘A’ Class Government Electrical Contractor • Established 2010
           </p>
         </div>
       </section>
 
       {/* Company Overview */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
           {/* Text */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-800 mb-6">
+            <h2 className="text-3xl font-bold text-blue-900 mb-6">
               Company Overview
             </h2>
 
-            <p className="text-gray-700 mb-6">
-              J.D. Enterprises is a government registered contractor specializing
-              in professional audio systems, CCTV surveillance, LCD projection
-              systems and lighting installations. We provide complete end-to-end
-              solutions from consultation and design to installation and
-              maintenance.
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              J.D. Enterprises is an ISO 9001:2015 certified ‘A’ Class Government 
+              Electrical Contractor specializing in contracting and execution of 
+              advanced Audio Visual, Surveillance and Lighting systems.
             </p>
 
-            <p className="text-gray-700">
-              Our focus is on delivering reliable, scalable and cost-effective
-              solutions for government institutions, educational campuses,
-              corporate offices and industrial facilities.
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              We provide complete end-to-end solutions including Sound Systems, 
+              LED Displays, Video Walls, Video Conference Systems, Stage Lighting, 
+              Stage Craft, CCTV Surveillance, LAN Networking and Projection Systems.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed">
+              Our services include technical consultancy, site-specific system 
+              design, supply, installation and commissioning — ensuring optimal 
+              sound clarity, performance and long-term reliability.
             </p>
           </div>
 
@@ -44,140 +49,133 @@ export default function About() {
           <div>
             <img
               src={aboutImage}
-              alt="Professional Installation Work"
-              className="rounded-xl shadow-lg w-full object-cover border border-gray-200"
+              alt="J.D. Enterprises Installation Work"
+              className="rounded-xl shadow-xl w-full object-cover border border-gray-200"
             />
-
           </div>
 
         </div>
       </section>
 
-      {/* Business Information */}
-      <section className="py-20 bg-gray-50">
+      {/* History */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">
+            Our Journey
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed">
+            Established in 2010, J.D. Enterprises has built industry leadership 
+            through more than 16 years of unwavering commitment to customer 
+            satisfaction. Our philosophy is consistent evolution — adopting 
+            modern technologies instead of relying on obsolete systems.
+          </p>
+
+          <p className="text-gray-700 mt-6 leading-relaxed">
+            Through a strong marketing network and prompt service support, 
+            we have developed a prestigious client base including Government 
+            Departments, Defense establishments, Corporate organizations, 
+            Educational institutions and Industrial clients across Maharashtra.
+          </p>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
 
-          <h2 className="text-3xl font-bold text-blue-800 mb-12 text-center">
-            Business Profile
+          <h2 className="text-3xl font-bold text-blue-900 mb-16 text-center">
+            Our Core Values
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-            {/* Left Column */}
-            <div className="space-y-4">
-              <InfoRow label="Nature of Business" value="Service Provider and Others" />
-              <InfoRow label="Additional Business" value="Works Contract, Office / Sale Office, Supplier of Services" />
-              <InfoRow label="Legal Status of Firm" value="Proprietorship" />
-              <InfoRow label="Annual Turnover" value="1.5 - 5 Cr" />
-            </div>
+            <ValueCard
+              title="Our Pledge"
+              description="To achieve customer satisfaction through integrity and time-bound commitments."
+            />
 
-            {/* Right Column */}
-            <div className="space-y-4">
-              <InfoRow label="Company CEO" value="Arti Jitendra Deopurkar" />
-              <InfoRow label="GST Registration Date" value="01-07-2017" />
-              <InfoRow label="GST Partner Name" value="Arti Jitendra Deopurkar" />
-              <InfoRow label="GST No." value="27AJTPD1488P1ZD" />
-            </div>
+            <ValueCard
+              title="Our Passion"
+              description="Continuous endeavor towards updated knowledge and technological advancement."
+            />
 
-          </div>
+            <ValueCard
+              title="Our Mission"
+              description="To provide neat, structured and user-friendly systems through dedicated and disciplined teamwork."
+            />
 
-        </div>
-      </section>
+            <ValueCard
+              title="Our Approach"
+              description="We transform discourse into dialogue. Whether a conference or performance, every listener should feel a one-to-one connection."
+            />
 
-      {/* Mission & Vision */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-
-          <div>
-            <h3 className="text-2xl font-bold text-blue-800 mb-4">
-              Our Mission
-            </h3>
-            <p className="text-gray-700">
-              To provide high-quality, reliable and technologically advanced
-              audio-visual and surveillance solutions that enhance security,
-              communication and operational efficiency.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-bold text-blue-800 mb-4">
-              Our Vision
-            </h3>
-            <p className="text-gray-700">
-              To become a trusted and leading solutions provider known for
-              excellence, integrity and long-term client relationships.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-blue-800 mb-12">
-            Why Choose J.D. Enterprises
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-
-            <div>
-              <h4 className="font-semibold text-blue-700 mb-2">
-                Government Registered Contractor
-              </h4>
-              <p className="text-gray-600 text-sm">
-                Authorized and compliant with government standards and
-                procurement processes.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-blue-700 mb-2">
-                Experienced Technical Team
-              </h4>
-              <p className="text-gray-600 text-sm">
-                Skilled professionals ensuring proper installation and system
-                optimization.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-blue-700 mb-2">
-                Turnkey Project Execution
-              </h4>
-              <p className="text-gray-600 text-sm">
-                From consultation to commissioning and AMC support.
-              </p>
-            </div>
+            <ValueCard
+              title="Our Commitment"
+              description="The Best Is Yet To Be — We strive for excellence in every project we execute."
+            />
 
           </div>
         </div>
       </section>
 
       {/* Industries Served */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-blue-800 mb-8">
+          <h2 className="text-3xl font-bold text-blue-900 mb-12">
             Industries We Serve
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-700 font-medium">
-            <div>Government Institutions</div>
-            <div>Educational Campuses</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-700 font-medium">
+            <div>Government Departments</div>
+            <div>Defense Establishments</div>
+            <div>Educational Institutions</div>
             <div>Corporate Offices</div>
+            <div>Hospitals</div>
+            <div>Auditoriums & Conference Halls</div>
+            <div>Sports Stadiums</div>
             <div>Industrial Facilities</div>
           </div>
         </div>
       </section>
 
+      {/* Why Choose Us */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+
+          <h2 className="text-3xl font-bold text-blue-900 mb-16">
+            Why Choose J.D. Enterprises
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+
+            <FeatureCard
+              title="ISO 9001:2015 Certified"
+              description="Quality-driven processes ensuring consistency, reliability and professional standards."
+            />
+
+            <FeatureCard
+              title="Government Approved Contractor"
+              description="Authorized ‘A’ Class Electrical Contractor compliant with government regulations and procurement systems."
+            />
+
+            <FeatureCard
+              title="Turnkey Project Execution"
+              description="From consultation and design to installation, commissioning and ongoing service support."
+            />
+
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="bg-blue-800 text-white py-16">
+      <section className="bg-blue-900 text-white py-20">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-3xl font-bold">
-            Let’s Build a Secure & Smart Infrastructure
+            Building Smart, Secure & Technologically Advanced Infrastructure
           </h2>
           <p className="mt-4 text-gray-200">
-            Contact us today for consultation and customized solutions.
+            Partner with J.D. Enterprises for reliable, scalable and future-ready solutions.
           </p>
         </div>
       </section>
@@ -186,15 +184,30 @@ export default function About() {
   );
 }
 
-function InfoRow({ label, value }) {
+/* Components */
+
+function ValueCard({ title, description }) {
   return (
-    <div className="flex justify-between border-b border-gray-200 pb-3">
-      <span className="font-semibold text-gray-700">
-        {label}
-      </span>
-      <span className="text-gray-600 text-right">
-        {value}
-      </span>
+    <div className="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition">
+      <h3 className="text-xl font-semibold text-blue-800 mb-3">
+        {title}
+      </h3>
+      <p className="text-gray-600 text-sm leading-relaxed">
+        {description}
+      </p>
+    </div>
+  );
+}
+
+function FeatureCard({ title, description }) {
+  return (
+    <div>
+      <h4 className="font-semibold text-blue-800 mb-3 text-lg">
+        {title}
+      </h4>
+      <p className="text-gray-600 text-sm leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }

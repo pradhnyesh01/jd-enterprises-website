@@ -4,86 +4,107 @@ import audioImage from "../assets/speakers.jpg";
 import cctvImage from "../assets/cctv.jpg";
 import projectorImage from "../assets/projector.jpg";
 import lightingImage from "../assets/lighting.jpg";
+import networkImage from "../assets/network.jpg";
 
 export default function Services() {
   return (
     <div>
 
       {/* Page Banner */}
-      <section className="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-20">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold">Our Services</h1>
-          <p className="mt-4 text-gray-100 max-w-2xl mx-auto">
-            We provide end-to-end installation, integration and maintenance
-            services for professional audio-visual and surveillance systems.
+          <h1 className="text-4xl font-bold">
+            Integrated AV & Surveillance Solutions
+          </h1>
+          <p className="mt-4 text-gray-200 max-w-3xl mx-auto">
+            J.D. Enterprises delivers complete design, supply, installation and
+            commissioning services for audio-visual, security and communication
+            infrastructure across government, corporate and institutional sectors.
           </p>
         </div>
       </section>
 
-      {/* Audio Systems */}
+      {/* Professional Sound Systems */}
       <ServiceBlock
-        title="Audio Systems"
-        description="Professional PA systems, conference room audio, auditorium sound setups, mixers, amplifiers and complete sound solutions."
+        title="Professional Sound & Public Address Systems"
+        description="We design and deploy high-performance sound systems tailored for auditoriums, conference halls, educational institutions and public facilities — ensuring clarity, coverage and reliability."
         points={[
-          "Public Address Systems",
-          "Conference Room Audio",
-          "Auditorium Installations",
-          "Wireless Microphones",
-          "AMC & Maintenance Support",
+          "Public Address & Announcement Systems",
+          "Conference & Boardroom Audio Solutions",
+          "Auditorium Acoustic Installations",
+          "Digital Mixers, Amplifiers & Wireless Microphones",
+          "Annual Maintenance & System Support",
         ]}
         image={audioImage}
       />
 
-      {/* CCTV */}
+      {/* CCTV Surveillance */}
       <ServiceBlock
-        title="CCTV Surveillance Systems"
-        description="Complete CCTV network design, installation and remote monitoring solutions for institutions, offices and industrial facilities."
+        title="CCTV & Integrated Surveillance Infrastructure"
+        description="Comprehensive security solutions including camera networks, monitoring stations and secure recording systems for institutions, industries and government facilities."
         points={[
-          "IP & Analog Cameras",
-          "Night Vision Systems",
-          "Remote Monitoring Setup",
-          "Control Room Installation",
-          "Annual Maintenance Contracts",
+          "IP-Based & Analog Camera Systems",
+          "Centralized Monitoring & Control Rooms",
+          "Night Vision & Perimeter Security Systems",
+          "Remote Viewing & Network Integration",
+          "Preventive Maintenance & AMC Services",
         ]}
         image={cctvImage}
         reverse
       />
 
-      {/* LCD Projectors */}
+      {/* Projection & Display */}
       <ServiceBlock
-        title="LCD Projectors & Display Solutions"
-        description="High-quality projection systems for classrooms, conference halls and corporate environments."
+        title="Projection, LED Displays & Video Walls"
+        description="Advanced visual communication systems designed for classrooms, corporate boardrooms, auditoriums and command centers."
         points={[
-          "Ceiling Mounted Projectors",
-          "Interactive Smart Boards",
-          "Projection Screens",
-          "Corporate Presentation Systems",
+          "Ceiling-Mounted & High-Lumen Projectors",
+          "Interactive Smart Boards & Presentation Systems",
+          "Large-Format LED Displays",
+          "Video Wall Installation & Configuration",
+          "System Calibration & Optimization",
         ]}
         image={projectorImage}
       />
 
-      {/* Lighting */}
+      {/* Lighting & Stage Craft */}
       <ServiceBlock
-        title="Professional Lighting Systems"
-        description="Energy-efficient LED and stage lighting installations for commercial and industrial use."
+        title="Stage Lighting & Architectural Lighting Systems"
+        description="Modern lighting solutions for performance venues, commercial spaces and institutional environments with intelligent control systems."
         points={[
-          "Architectural Lighting",
-          "Stage Lighting",
-          "Industrial LED Solutions",
-          "Commercial Lighting Systems",
+          "Stage & Event Lighting Design",
+          "Architectural & Facade Lighting",
+          "Energy-Efficient LED Installations",
+          "Lighting Control & Automation Systems",
+          "Complete Stage Craft Setup",
         ]}
         image={lightingImage}
         reverse
       />
 
+      {/* Networking & Consultancy */}
+      <ServiceBlock
+        title="LAN Networking & Technical Consultancy"
+        description="Structured cabling and network infrastructure designed to support integrated audio-visual and surveillance systems with long-term scalability."
+        points={[
+          "Structured Cabling & Rack Installations",
+          "Network Infrastructure Planning",
+          "Site-Specific System Design",
+          "Technical Evaluation & Acoustic Consultation",
+          "End-to-End Project Execution",
+        ]}
+        image={networkImage} // Replace with networking image later if available
+      />
+
       {/* CTA */}
-      <section className="bg-blue-800 text-white py-16 mt-16">
+      <section className="bg-blue-900 text-white py-20 mt-20">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-3xl font-bold">
-            Need Professional Installation for Your Facility?
+            Planning to Upgrade Your Facility Infrastructure?
           </h2>
           <p className="mt-4 text-gray-200">
-            Contact J.D. Enterprises today for customized solutions.
+            Partner with J.D. Enterprises for reliable, future-ready and
+            government-compliant technology solutions.
           </p>
         </div>
       </section>
